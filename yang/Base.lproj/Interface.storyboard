@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <button width="1" alignment="left" title="发送" id="nw2-XT-vu7">
+                            <connections>
+                                <action selector="sendMsgToiOS" destination="AgC-eL-Hgc" id="tkf-xD-DRz"/>
+                            </connections>
+                        </button>
+                        <label alignment="left" text="Label" id="C1j-y7-lmc"/>
+                    </items>
+                    <connections>
+                        <outlet property="sendBtn" destination="nw2-XT-vu7" id="gVJ-Fn-uR0"/>
+                        <outlet property="tipLabel" destination="C1j-y7-lmc" id="bxR-yE-dc6"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
